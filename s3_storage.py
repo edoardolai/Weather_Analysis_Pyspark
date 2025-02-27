@@ -1,9 +1,3 @@
-"""
-S3 Storage Module
-----------------
-Functions for storing data in AWS S3.
-"""
-
 import boto3
 import os
 import json
@@ -100,7 +94,7 @@ def upload_to_s3(data, bucket_name, region="eu-north-1"):
         return False
 
 
-# You can test this directly
+# Can be tested separately
 if __name__ == "__main__":
     from dotenv import load_dotenv
 

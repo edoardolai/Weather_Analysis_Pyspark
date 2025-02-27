@@ -1,5 +1,3 @@
-import os
-import json
 import time
 import requests
 from datetime import datetime
@@ -76,8 +74,6 @@ def save_weather_data(data):
                 data, AWS_CONFIG["bucket_name"], AWS_CONFIG["region"]
             )
             if success:
-                # Return True since we don't need to return the filename anymore
-                # The caller doesn't use the return value anyway
                 return True
             else:
                 print("Failed to upload data to S3")

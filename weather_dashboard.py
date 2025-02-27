@@ -1,10 +1,3 @@
-"""
-Ultra Simple Weather Dashboard with PySpark Integration
------------------------------------------------------
-Streamlit dashboard showing only charts for cities,
-using data processed by PySpark.
-"""
-
 import streamlit as st
 import pandas as pd
 import boto3
